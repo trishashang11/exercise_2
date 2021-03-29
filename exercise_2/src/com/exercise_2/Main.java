@@ -1,5 +1,6 @@
 package com.exercise_2;
 
+import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
@@ -103,6 +104,93 @@ public class Main {
 
         System.out.println(mysecondDouble);
         System.out.println(mysecondShort);
+        System.out.println("");
+        // conditional statements
+        System.out.println("conditional statement");
+
+        if(20>10){
+            System.out.println("20 is greater than 10");
+        }
+        //or
+        int time=18;
+        String result=(time<18)?"Good day.":"Good evening.";
+        System.out.println(result);
+
+        System.out.println("");
+
+        int day=7;
+
+        System.out.println("if else statement");
+        if(day==1){
+            System.out.println("Monday");
+        }else if (day==2){
+            System.out.println("Tuesday");
+        }else if (day==3){
+            System.out.println("Wednesday");
+        }
+        else if (day==4){
+            System.out.println("Thursday");
+        }else if(day==5){
+            System.out.println("Friday");
+        }
+        else System.out.println("its another day");
+        System.out.println("");
+        //or
+        System.out.println("or");
+        String whatDay=(day==5)?"Friday":"its another day";
+        System.out.println(whatDay);
+        //or
+        System.out.println("");
+        System.out.println("switch case statement");
+        switch (day){
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            default:
+                System.out.println("its another day");
+        }
+
+        //while loop
+        System.out.println("");
+        System.out.println("while loop");
+        int x=1;
+
+        while (x<=10){
+            System.out.println("increment number"+x);
+            x++;
+        }
+        //while loop exercise
+        System.out.println("while loop exercise");
+        System.out.println("problem: write a method with a while loop\n" +
+                "        to prints 1 through n in square brackets.\n" +
+                "        for example, if n=6 print.");
+      int n=1;
+        while (n<=6){
+            System.out.print("["+n+"]");
+            n++;
+        }
+
+        System.out.println("");
+        Scanner sc=new Scanner(System.in)
+        System.out.println("input number");
+        int sum=sc.nextInt();
+        while (sum<=5){
+            System.out.print((sum+1)+"");
+            sum++;
+        }
+
 
 
     }
