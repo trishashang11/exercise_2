@@ -183,13 +183,56 @@ public class Main {
         }
 
         System.out.println("");
-        Scanner sc=new Scanner(System.in)
-        System.out.println("input number");
-        int sum=sc.nextInt();
-        while (sum<=5){
-            System.out.print((sum+1)+"");
-            sum++;
+        //Scanner sc=new Scanner(System.in);
+        //System.out.println("input number");
+        System.out.println("option1 while loop with if else");
+        int y=10;
+        int m=1;
+        int sum=0;
+        String print="Sum = ";
+        while (m<=y){
+         if (m==y){
+             print+=m;
+         }else {
+             print+=m+" + ";
+         }
+         sum+=m;
+         m++;
         }
+        System.out.println(print);
+        System.out.println("Answer: "+sum);
+
+        System.out.println("option2 while loop only");
+        int a=5;
+        int b=1;
+        int ans=0;
+        String msg="Sum = ";
+        while (b<=a){
+            msg+=b+" + ";
+            ans+=b;
+            b++;
+        }
+        System.out.println(msg);
+        System.out.println("Answer : "+ ans); //need to fix
+
+        System.out.println("");
+        //write a method with a do while loop that generates an array of the first n even number; ex: input 5 - 2,4,6,8,10
+        int numb=10;
+        int numc=1;
+        numb*=2;
+        do {
+            if (numc%2==0) {
+                System.out.print(numc + " ");
+            }
+            numc++;
+        }while (numc<=numb);
+
+
+
+
+
+
+
 
 
 
