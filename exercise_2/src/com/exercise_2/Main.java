@@ -219,7 +219,8 @@ public class Main {
         //write a method with a do while loop that generates an array of the first n even number; ex: input 5 - 2,4,6,8,10
         int numb=10;
         int numc=1;
-        numb*=2;
+        System.out.println("given number: "+ numb);
+       numb*=2;
         do {
             if (numc%2==0) {
                 System.out.print(numc + " ");
@@ -227,6 +228,21 @@ public class Main {
             numc++;
         }while (numc<=numb);
 
+        System.out.println("\n");
+       // public void fibonacci() {
+            System.out.println("Fibonacci sequence");
+            //write a method with a for loop that generates the first n numbers in the fibonacci sequence ex: 1,1,2,3,5,8,13,21
+            int j = 8;
+            int k = 0;
+            int l = 1;
+            for (int i = 0; i <= j; i++) {
+                System.out.print(k + " ");
+                int sumOftwo = k + l;
+                k = l;
+                l = sumOftwo;
+
+           // }
+        }
 
 
 
